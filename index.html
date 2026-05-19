@@ -413,7 +413,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:52px 24px 28px}
           <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Отримайте підтвердження</strong><span>Запис одразу надійде адміністратору в Telegram</span></div></div>
           <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Приходьте та посміхайтесь!</strong><span>За 24 години нагадаємо про ваш візит</span></div></div>
         </div>
-        <div class="tg-setup">
+        <div class="tg-setup" style="display:none">
           <h3>🤖 Налаштування Telegram-бота</h3>
           <p>Введіть токен бота та chat_id адміністратора, щоб записи надходили в Telegram</p>
           <div class="tg-fields">
@@ -693,8 +693,8 @@ function pickTime(t){
 }
 
 // Telegram
-let tgToken=localStorage.getItem('pd_tg_token')||'';
-let tgChatId=localStorage.getItem('pd_tg_chatid')||'';
+let tgToken='7993207521:AAHCfnaFC1rk1dDFegytFCtnc1mnBGg-Z9w';
+let tgChatId='-1003808414677';
 function loadTgSettings(){
   if(tgToken) document.getElementById('tg-token').value=tgToken;
   if(tgChatId) document.getElementById('tg-chatid').value=tgChatId;
